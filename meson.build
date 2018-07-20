@@ -1,5 +1,5 @@
 project('libhmsbeagle',
-	['c', 'cpp', 'java'],
+	['c', 'cpp'], # 'java'],
 	default_options : ['c_std=c11', 'cpp_std=c++11'],
 	version : '3.0.2',
         license : ['GPL3+', 'LGPL3+'])
