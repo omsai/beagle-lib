@@ -1,0 +1,161 @@
+/* libhmsbeagle/config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define to 1 to support Advanced Bit Manipulation */
+#mesondefine HAVE_ABM
+
+/* Define to 1 to support Multi-Precision Add-Carry Instruction Extensions */
+#mesondefine HAVE_ADX
+
+/* Define to 1 to support Advanced Encryption Standard New Instruction Set
+   (AES-NI) */
+#mesondefine HAVE_AES
+
+/* Support Altivec instructions */
+#mesondefine HAVE_ALTIVEC
+
+/* Define to 1 to support Advanced Vector Extensions */
+#mesondefine HAVE_AVX
+
+/* Define to 1 to support Advanced Vector Extensions 2 */
+#mesondefine HAVE_AVX2
+
+/* Define to 1 to support AVX-512 Byte and Word Instructions */
+#mesondefine HAVE_AVX512_BW
+
+/* Define to 1 to support AVX-512 Conflict Detection Instructions */
+#mesondefine HAVE_AVX512_CD
+
+/* Define to 1 to support AVX-512 Doubleword and Quadword Instructions */
+#mesondefine HAVE_AVX512_DQ
+
+/* Define to 1 to support AVX-512 Exponential & Reciprocal Instructions */
+#mesondefine HAVE_AVX512_ER
+
+/* Define to 1 to support AVX-512 Foundation Extensions */
+#mesondefine HAVE_AVX512_F
+
+/* Define to 1 to support AVX-512 Integer Fused Multiply Add Instructions */
+#mesondefine HAVE_AVX512_IFMA
+
+/* Define to 1 to support AVX-512 Conflict Prefetch Instructions */
+#mesondefine HAVE_AVX512_PF
+
+/* Define to 1 to support AVX-512 Vector Byte Manipulation Instructions */
+#mesondefine HAVE_AVX512_VBMI
+
+/* Define to 1 to support AVX-512 Vector Length Extensions */
+#mesondefine HAVE_AVX512_VL
+
+/* Define to 1 to support Bit Manipulation Instruction Set 1 */
+#mesondefine HAVE_BMI1
+
+/* Define to 1 to support Bit Manipulation Instruction Set 2 */
+#mesondefine HAVE_BMI2
+
+/* Define to 1 if you have the <cpuid.h> header file. */
+#mesondefine HAVE_CPUID_H
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#mesondefine HAVE_DLFCN_H
+
+/* Define to 1 to support Fused Multiply-Add Extensions 3 */
+#mesondefine HAVE_FMA3
+
+/* Define to 1 to support Fused Multiply-Add Extensions 4 */
+#mesondefine HAVE_FMA4
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#mesondefine HAVE_INTTYPES_H
+
+/* "Defined if the libtool dev libs are present" */
+#mesondefine HAVE_LIBLTDL
+
+/* Define to 1 if you have the <memory.h> header file. */
+#mesondefine HAVE_MEMORY_H
+
+/* Define to 1 to support Multimedia Extensions */
+#mesondefine HAVE_MMX
+
+/* Define to 1 to support Memory Protection Extensions */
+#mesondefine HAVE_MPX
+
+/* Define to 1 to support Prefetch Vector Data Into Caches WT1 */
+#mesondefine HAVE_PREFETCHWT1
+
+/* Define to 1 to support Digital Random Number Generator */
+#mesondefine HAVE_RDRND
+
+/* Define to 1 to support Secure Hash Algorithm Extension */
+#mesondefine HAVE_SHA
+
+/* Define to 1 to support Streaming SIMD Extensions */
+#mesondefine HAVE_SSE
+
+/* Define to 1 to support Streaming SIMD Extensions */
+#mesondefine HAVE_SSE2
+
+/* Define to 1 to support Streaming SIMD Extensions 3 */
+#mesondefine HAVE_SSE3
+
+/* Define to 1 to support Streaming SIMD Extensions 4.1 */
+#mesondefine HAVE_SSE4_1
+
+/* Define to 1 to support Streaming SIMD Extensions 4.2 */
+#mesondefine HAVE_SSE4_2
+
+/* Define to 1 to support AMD Streaming SIMD Extensions 4a */
+#mesondefine HAVE_SSE4a
+
+/* Define to 1 to support Supplemental Streaming SIMD Extensions 3 */
+#mesondefine HAVE_SSSE3
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#mesondefine HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#mesondefine HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#mesondefine HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#mesondefine HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#mesondefine HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#mesondefine HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#mesondefine HAVE_UNISTD_H
+
+/* Define to 1 to support eXtended Operations Extensions */
+#mesondefine HAVE_XOP
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#mesondefine LT_OBJDIR
+
+/* Define to the address where bug reports for this package should be sent. */
+#mesondefine PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#mesondefine PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#mesondefine PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#mesondefine PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#mesondefine PACKAGE_URL
+
+/* Define to the version of this package. */
+#mesondefine PACKAGE_VERSION
+
+/* "Define version number for plugins" */
+#mesondefine PLUGIN_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#mesondefine STDC_HEADERS
