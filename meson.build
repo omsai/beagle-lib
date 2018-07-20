@@ -53,10 +53,23 @@ dep_opencl = dependency('OpenCL', required : false)
 # 		  avx2 : 'simd_avx2.c',
 # 		  compiler : cc)
 
-inc = include_directories('.', 'libhmsbeagle')
+inc = include_directories('.', 'libhmsbeagle', 'libhmsbeagle/plugin')
 
 subdir('libhmsbeagle')
 
-lib = library('hmsbeagle', 'libhmsbeagle/beagle.cpp', install : true)
-dep_hmsbeagle = declare_dependency(include_directories : inc,
-				   link_with : lib)
+cpp = meson.get_compiler('cpp')
+dl = cpp.find_library('dl')
+libplugin = library('plugin',
+		    [
+		      'libhmsbeagle/plugin/Plugin.cpp',
+		      'libhmsbeagle/plugin/UnixSharedLibrary.cpp',
+		    ],
+		    install : true,
+		    dependencies : dl)
+libdir = join_paths(get_option('prefix'), get_option('libdir'))
+libhmsbeagle = library('hmsbeagle', 'libhmsbeagle/beagle.cpp',
+		       install : true,
+		       link_with : libplugin,
+		       install_rpath : libdir)
+dep_beagle = declare_dependency(include_directories : inc,
+				link_with : libhmsbeagle)
